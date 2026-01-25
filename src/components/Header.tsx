@@ -12,7 +12,7 @@ export default function Header() {
     <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-20 transition-colors">
       <div className="max-w-8xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between flex-wrap gap-4">
         <Link to="/" className="">
-          <img src="/src/assets/logo.png" className="inline-block w-5 h-5 mr-2" />
+          <img src="/src/assets/scholar_logo.png" className="inline-block w-5 h-5 mr-2" />
           <h2 className="inline-block text-1xl font-bold">CA MONK</h2>
         </Link>
 
