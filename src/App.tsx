@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from "./components/Header";
 import Loadingpage from './pages/Loadingpage';
 import BlogLayout from './pages/BlogLayout';
+import CreateBlogPage from "@/pages/CreateBlogPage";
 
 
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -27,6 +28,8 @@ function App() {
             <Route path="/points" element={<PointsPage />} />
             <Route path="/blog" element={<Navigate to="/blog/1" replace />} />
             <Route path="/blog/:id" element={<BlogLayout />} />
+            <Route path="/blogs/new" element={<CreateBlogPage />} />
+
           </Routes>
         </Suspense>
       </main>

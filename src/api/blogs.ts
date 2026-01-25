@@ -21,3 +21,14 @@ export async function getBlogById(id: string): Promise<Blog> {
   if (!res.ok) throw new Error("Failed to fetch Blog");
   return res.json();
 }
+
+export async function createBlog(payload: Omit<Blog, "id">): Promise<Blog> {
+  const res = await fetch(`${BASE}/blogs`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  if (!res.ok) throw new Error("Failed to create blog");
+  return res.json();
+}

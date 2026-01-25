@@ -39,6 +39,16 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <Link to="/blog" className="mt-4">
+                <button className="px-4 py-2 bg-indigo-400 text-white rounded hover:bg-indigo-700">
+                    Click Here to continue
+                </button>
+            </Link>
+            <Link to="/blogs/new" className="mt-4">
+                <button className="px-4 py-2 bg-green-400 text-white rounded hover:bg-green-700">
+                    Create New Blog
+                </button>
+            </Link>
           <button className="p-2 rounded-md bg-indigo-600 text-white">
             Profile
           </button>
@@ -49,6 +59,7 @@ export default function Header() {
           >
             {theme === "dark" ? "Light" : "Dark"}
           </button>
+          
         </div>
       </div>
     </header>

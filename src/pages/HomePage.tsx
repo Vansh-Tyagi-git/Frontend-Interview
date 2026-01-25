@@ -9,5 +9,10 @@ export default function HomePage(){
                     Click Here to continue
                 </button>
             </Link>
+            <Link to="/blogs/new" className="mt-4">
+                <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+                    Create New Blog
+                </button>
+            </Link>
         </div>
     );}
