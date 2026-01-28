@@ -8,7 +8,7 @@ export type Blog = {
   content: string;
 };
 
-const BASE = "http://localhost:3001";
+const BASE = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
 export async function getBlogsSorted(): Promise<Blog[]> {
   const res = await fetch(`${BASE}/blogs?_sort=date&_order=desc`);
