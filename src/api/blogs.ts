@@ -8,7 +8,7 @@ export type Blog = {
   content: string;
 };
 
-const BASE = import.meta.env.VITE_API_URL || "http://localhost:3001" || "https://frontend-interview-pec9.onrender.com";
+const BASE = "https://frontend-interview-pec9.onrender.com";
 
 export async function getBlogsSorted(): Promise<Blog[]> {
   const res = await fetch(`${BASE}/blogs?_sort=date&_order=desc`);
